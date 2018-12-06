@@ -1,0 +1,6 @@
+
+<% @users.each do |user| %>
+  <p><%= user.full_name %></p>
+  <%= user.created_at %>
+  <span class="label label-<%= user.label_role_class %>"><%= user.role %></span>
+<% end %>
